@@ -30778,7 +30778,7 @@ var Body = function Body() {
       setFilteredRestaurants(filteredData);
       setErrorMessage("");
       if ((filteredData === null || filteredData === void 0 ? void 0 : filteredData.length) === 0) {
-        setErrorMessage("No matches restaurant found");
+        setErrorMessage("No results found for the given restaurant");
       }
     } else {
       setErrorMessage("");

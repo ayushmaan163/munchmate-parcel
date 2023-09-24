@@ -65,7 +65,7 @@ const Body = () => {
       setFilteredRestaurants(filteredData);
       setErrorMessage("");
       if (filteredData?.length === 0) {
-        setErrorMessage("No matches restaurant found");
+        setErrorMessage("No results found for the given restaurant");
       }
     } else {
       setErrorMessage("");
