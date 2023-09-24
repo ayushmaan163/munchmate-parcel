@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
 /* Select all CSS */
 * {
@@ -6,7 +6,7 @@
   padding: 0;
   overflow-x: hidden;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* create global variable with :root selector */
@@ -51,12 +51,20 @@
   display: flex;
   align-items: baseline;
   justify-content: space-evenly;
+  /* text-decoration: none; */
 }
 
 .nav-items > ul > li {
   padding: 10px;
   font-size: large;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-items > ul > li > Link {
+  text-decoration: none;
+  color: white;
 }
 
 .nav-items > ul > li .logout-btn,

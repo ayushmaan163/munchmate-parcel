@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "/munchmate-logo2.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isLoggedin, setIsLoggedin] = useState(true);
@@ -15,8 +16,12 @@ const Header = () => {
 
         <div className="nav-items">
           <ul>
-            <li>Home</li>
-            <li>About</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
             <li>Contact</li>
             <li>Cart</li>
             <li>
