@@ -17,12 +17,20 @@ const Header = () => {
         <div className="nav-items">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" className="Link-tag">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about" className="Link-tag">
+                About
+              </Link>
             </li>
-            <li>Contact</li>
+            <li>
+              <Link to="/contact" className="Link-tag">
+                Contact
+              </Link>
+            </li>
             <li>Cart</li>
             <li>
               {/* use conditional rendering for login and logout */}

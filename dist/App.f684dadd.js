@@ -36730,10 +36730,15 @@ var Header = function Header() {
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "nav-items"
   }, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/"
+    to: "/",
+    className: "Link-tag"
   }, "Home")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: "/about"
-  }, "About")), /*#__PURE__*/_react.default.createElement("li", null, "Contact"), /*#__PURE__*/_react.default.createElement("li", null, "Cart"), /*#__PURE__*/_react.default.createElement("li", null, isLoggedin ? /*#__PURE__*/_react.default.createElement("button", {
+    to: "/about",
+    className: "Link-tag"
+  }, "About")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/contact",
+    className: "Link-tag"
+  }, "Contact")), /*#__PURE__*/_react.default.createElement("li", null, "Cart"), /*#__PURE__*/_react.default.createElement("li", null, isLoggedin ? /*#__PURE__*/_react.default.createElement("button", {
     className: "logout-btn",
     onClick: function onClick() {
       return setIsLoggedin(false);
@@ -38695,7 +38700,21 @@ var Error = function Error() {
 };
 var _default = Error;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/dist/index.js"}],"src/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/dist/index.js"}],"src/components/Contact.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("react"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var Contact = function Contact() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("h1", null, "Contact"));
+};
+var _default = Contact;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -38706,23 +38725,31 @@ var _Footer = _interopRequireDefault(require("./components/Footer"));
 var _reactRouterDom = require("react-router-dom");
 var _About = _interopRequireDefault(require("./components/About"));
 var _Error = _interopRequireDefault(require("./components/Error"));
+var _Contact = _interopRequireDefault(require("./components/Contact"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var AppLayout = function AppLayout() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Body.default, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Outlet, null), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
 };
 var appRouter = (0, _reactRouterDom.createBrowserRouter)([{
   path: "/",
   element: /*#__PURE__*/_react.default.createElement(AppLayout, null),
-  errorElement: /*#__PURE__*/_react.default.createElement(_Error.default, null)
-}, {
-  path: "/about",
-  element: /*#__PURE__*/_react.default.createElement(_About.default, null)
+  errorElement: /*#__PURE__*/_react.default.createElement(_Error.default, null),
+  children: [{
+    path: "/",
+    element: /*#__PURE__*/_react.default.createElement(_Body.default, null)
+  }, {
+    path: "/about",
+    element: /*#__PURE__*/_react.default.createElement(_About.default, null)
+  }, {
+    path: "/contact",
+    element: /*#__PURE__*/_react.default.createElement(_Contact.default, null)
+  }]
 }]);
 var root = _client.default.createRoot(document.getElementById("root"));
 root.render( /*#__PURE__*/_react.default.createElement(_reactRouterDom.RouterProvider, {
   router: appRouter
 }));
-},{"react":"node_modules/react/index.js","react-dom/client":"node_modules/react-dom/client.js","./components/Header":"src/components/Header.js","./components/Body":"src/components/Body.js","./components/Footer":"src/components/Footer.js","react-router-dom":"node_modules/react-router-dom/dist/index.js","./components/About":"src/components/About.js","./components/Error":"src/components/Error.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom/client":"node_modules/react-dom/client.js","./components/Header":"src/components/Header.js","./components/Body":"src/components/Body.js","./components/Footer":"src/components/Footer.js","react-router-dom":"node_modules/react-router-dom/dist/index.js","./components/About":"src/components/About.js","./components/Error":"src/components/Error.js","./components/Contact":"src/components/Contact.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -38747,7 +38774,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64616" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49708" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
