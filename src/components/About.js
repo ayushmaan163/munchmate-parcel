@@ -1,4 +1,4 @@
-// import food from "../images/burger-image.png";
+import food from "../images/burger-image.png";
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
         </h4>
       </div>
       <div className="about-right">
-        {/* <img src={food} alt="Food Image" /> */}
+        <img src={food} alt="Food Image" />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-// import contact from "../images/Contact-Us.png";
+import contact from "../images/Contact-Us.png";
 import { useState } from "react";
 
 const Contact = () => {
@@ -9,7 +9,9 @@ const Contact = () => {
   };
   return (
     <div className="contact-container">
-      <div className="contact-left">{/* <img src={contact} alt="" /> */}</div>
+      <div className="contact-left">
+        <img src={contact} alt="" />
+      </div>
       <div className="contact-right">
         <h1>Contact us</h1>
         <form onSubmit={handleSubmit}>

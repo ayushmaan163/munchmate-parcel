@@ -35878,10 +35878,11 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$5b98.prelude(module);
 
 try {
-// import food from "../images/burger-image.png";
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _burgerImagePng = require("../images/burger-image.png");
+var _burgerImagePngDefault = parcelHelpers.interopDefault(_burgerImagePng);
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "about-container",
@@ -35941,7 +35942,15 @@ const About = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "about-right"
+                className: "about-right",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _burgerImagePngDefault.default),
+                    alt: "Food Image"
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, undefined)
             }, void 0, false, {
                 fileName: "src/components/About.js",
                 lineNumber: 14,
@@ -35964,17 +35973,21 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kvula":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../images/burger-image.png":"jnKEW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jnKEW":[function(require,module,exports) {
+module.exports = require("791f119bec20e77b").getBundleURL("aXMci") + "burger-image.e4c9af54.png" + "?" + Date.now();
+
+},{"791f119bec20e77b":"lgJ39"}],"kvula":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0ba4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$0ba4.prelude(module);
 
 try {
-// import ErrorImage from "../images/404 Error.jpg";
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _404ErrorJpg = require("../images/404 Error.jpg");
+var _404ErrorJpgDefault = parcelHelpers.interopDefault(_404ErrorJpg);
 var _reactRouterDom = require("react-router-dom"); // import useRouteError for routing error
 var _s = $RefreshSig$();
 const Error = ()=>{
@@ -35984,6 +35997,14 @@ const Error = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "error-page",
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: (0, _404ErrorJpgDefault.default),
+                alt: "Error Image"
+            }, void 0, false, {
+                fileName: "src/components/Error.js",
+                lineNumber: 10,
+                columnNumber: 7
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Oops! The restaurant you're looking for can't be found."
             }, void 0, false, {
@@ -36036,17 +36057,21 @@ $RefreshReg$(_c, "Error");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cgAOG":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../images/404 Error.jpg":"4yfQc","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4yfQc":[function(require,module,exports) {
+module.exports = require("d86163bb382647a9").getBundleURL("aXMci") + "404 Error.bc881a4b.jpg" + "?" + Date.now();
+
+},{"d86163bb382647a9":"lgJ39"}],"cgAOG":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ee46 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$ee46.prelude(module);
 
 try {
-// import contact from "../images/Contact-Us.png";
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _contactUsPng = require("../images/Contact-Us.png");
+var _contactUsPngDefault = parcelHelpers.interopDefault(_contactUsPng);
 var _react = require("react");
 var _s = $RefreshSig$();
 const Contact = ()=>{
@@ -36060,7 +36085,15 @@ const Contact = ()=>{
         className: "contact-container",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "contact-left"
+                className: "contact-left",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _contactUsPngDefault.default),
+                    alt: ""
+                }, void 0, false, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 13,
+                    columnNumber: 9
+                }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Contact.js",
                 lineNumber: 12,
@@ -36073,7 +36106,7 @@ const Contact = ()=>{
                         children: "Contact us"
                     }, void 0, false, {
                         fileName: "src/components/Contact.js",
-                        lineNumber: 14,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -36085,7 +36118,7 @@ const Contact = ()=>{
                                 required: true
                             }, void 0, false, {
                                 fileName: "src/components/Contact.js",
-                                lineNumber: 16,
+                                lineNumber: 18,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -36094,7 +36127,7 @@ const Contact = ()=>{
                                 required: true
                             }, void 0, false, {
                                 fileName: "src/components/Contact.js",
-                                lineNumber: 17,
+                                lineNumber: 19,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
@@ -36102,7 +36135,7 @@ const Contact = ()=>{
                                 required: true
                             }, void 0, false, {
                                 fileName: "src/components/Contact.js",
-                                lineNumber: 18,
+                                lineNumber: 20,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36110,26 +36143,26 @@ const Contact = ()=>{
                                 children: "Submit"
                             }, void 0, false, {
                                 fileName: "src/components/Contact.js",
-                                lineNumber: 19,
+                                lineNumber: 21,
                                 columnNumber: 11
                             }, undefined),
                             message && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 children: "Thanks for contacting FoodFire, We will reply ASAP."
                             }, void 0, false, {
                                 fileName: "src/components/Contact.js",
-                                lineNumber: 21,
+                                lineNumber: 23,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Contact.js",
-                        lineNumber: 15,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Contact.js",
-                lineNumber: 13,
+                lineNumber: 15,
                 columnNumber: 7
             }, undefined)
         ]
@@ -36150,7 +36183,10 @@ $RefreshReg$(_c, "Contact");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8PuJ6":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../images/Contact-Us.png":"1L9iM","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1L9iM":[function(require,module,exports) {
+module.exports = require("adab2b6a00e66d64").getBundleURL("aXMci") + "Contact-Us.b041d37b.png" + "?" + Date.now();
+
+},{"adab2b6a00e66d64":"lgJ39"}],"8PuJ6":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$40d6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
