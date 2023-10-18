@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import logo from "/munchmate-logo2.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -32,7 +32,7 @@ const Header = () => {
               </Link>
             </li>
             <li>Cart</li>
-            <li>
+            <li className="log-btn">
               {/* use conditional rendering for login and logout */}
               {isLoggedin ? (
                 <button
